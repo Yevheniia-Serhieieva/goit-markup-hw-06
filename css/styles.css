@@ -425,6 +425,12 @@ main {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+@media (min-resolution: 192dpi) {
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
+    }
+}
+
 .title-text {
     font-weight: 700;
     font-size: 36px;
@@ -630,6 +636,7 @@ main {
 }
 
 .team-card {
+    min-width: 264px;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -855,6 +862,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
  }
 
 .footer-container {
@@ -1011,8 +1019,13 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+        padding: 96px 164px 96px 108px;
+    }
+
     .footer-container {
         margin-right: 24px;
+        align-items: flex-start;
     } 
 
     .footer-text {
@@ -1021,6 +1034,7 @@ main {
     
     .footer-social {
         margin-bottom: 104px;
+        align-items: flex-start;
     }
     
     .footer-subscribe {
