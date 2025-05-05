@@ -439,6 +439,7 @@ main {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 216px;
+    margin: 0 auto;
 }
 
 .title-button {
